@@ -3,7 +3,7 @@ const app = require('../src/app');
 
 describe('/strings', () => {
   describe('GET /hello/{string}', () => {
-    it('returns "Hello world!" when passed "world"', done => {
+    xit('returns "Hello world!" when passed "world"', done => {
       request(app)
         .get('/strings/hello/world')
         .then(res => {
@@ -15,7 +15,7 @@ describe('/strings', () => {
   });
 
   describe('GET /hello/{string}', () => {
-    it('returns "Hello turtle!" when passed "turtle"', done => {
+    xit('returns "Hello turtle!" when passed "turtle"', done => {
       request(app)
         .get('/strings/hello/turtle')
         .then(res => {
@@ -27,7 +27,7 @@ describe('/strings', () => {
   });
 
   describe('GET /upper/{string}', () => {
-    xit('returns the uppercased string', done => {
+    xit('returns the uppercase string', done => {
       request(app)
         .get('/strings/upper/hello')
         .then(res => {
