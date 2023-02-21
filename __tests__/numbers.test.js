@@ -33,7 +33,7 @@ describe('/numbers', () => {
         });
     });
 
-    xit('errors if the parameters are not numbers', done => {
+    it('errors if the parameters are not numbers', done => {
       request(app)
         .get('/numbers/add/fish/and/chips')
         .then(res => {
@@ -65,7 +65,7 @@ describe('/numbers', () => {
         });
     });
 
-    it('errors if the parameters are not numbers', done => {
+    xit('errors if the parameters are not numbers', done => {
       request(app)
         .get('/numbers/subtract/fish/from/chips')
         .then(res => {
